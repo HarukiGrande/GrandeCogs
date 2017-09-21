@@ -54,11 +54,11 @@ class RadioHaru:
             player.start()
             await asyncio.sleep(7)
             player.stop()
+            await self.bot.say(":green_heart: **Playing Radio Haru!**")
             radio = True
             while radio == True:
                 player = voice.create_ffmpeg_player('http://stream.radioharu.pw/owo')
                 player.start()
-                await self.bot.say(":green_heart: **Playing Radio Haru!**")
                 await asyncio.sleep(300)
 
     @radioharu.command(pass_context=True, no_pm=True)
