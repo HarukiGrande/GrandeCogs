@@ -52,6 +52,11 @@ class RadioHaru:
         await self._disconnect_voice_client(server)
         await self.bot.say(":red_circle: **Stopped playing Radio!**")
         
+    @radioharu.command(pass_context=True, no_pm=True)
+    async def donate(self, ctx):
+        """Donate for server costs"""
+        await self.bot.say("**https://paypal.me/HarukiGrande**")
+        
     def voice_client(self, server):
         return self.bot.voice_client_in(server)
 
