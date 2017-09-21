@@ -5,6 +5,5 @@
     "SHORT" : "[p]radioharu",
     "DESCRIPTION" : "Radio Haru 24/7 Online Radio",
     "TAGS" : ["radio","haru","radioharu"],
-    "REQUIREMENTS": [""],
     "HIDDEN" : false
 }
