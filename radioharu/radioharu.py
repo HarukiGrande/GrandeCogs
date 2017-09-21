@@ -15,6 +15,7 @@ class RadioHaru:
         """Radio Haru"""
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
+            await self.bot.say("https://radioharu.pw/")
 
     @radioharu.command(pass_context=True, no_pm=True)
     @checks.serverowner_or_permissions(manage_server=True)
