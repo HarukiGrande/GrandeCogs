@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "Mr Boo Grande",
+    "INSTALL_MSG" : "You have successfully installed RadioHaru. Visit https://radioharu.pw/",
+    "NAME" : "RadioHaru",
+    "SHORT" : "[p]radioharu",
+    "DESCRIPTION" : "Radio Haru 24/7 Online Radio",
+    "TAGS" : ["radio","haru","radioharu"],
+    "REQUIREMENTS": [""],
+    "HIDDEN" : false
+}
