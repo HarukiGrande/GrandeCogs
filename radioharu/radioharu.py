@@ -5,7 +5,7 @@ from __main__ import send_cmd_help
 import asyncio
 
 class RadioHaru:
-    """Radio Haru"""
+    """Radio Haru - www.RadioHaru.pw"""
 
     def __init__(self, bot):
         self.bot = bot
