@@ -37,8 +37,8 @@ class RadioHaru:
             player.start()
             await self.bot.say(":green_heart: **Playing Radio Haru!**")
             
-    @radio.command(pass_context=True, no_pm=True)
-    @checks.is_owner()
+    @radioharu.command(pass_context=True, no_pm=True)
+    @checks.serverowner_or_permissions(manage_server=True)
     async def playwin(self, ctx):
         """Play Radio Haru - Use instead of play command if on a Windows machine."""
         server = ctx.message.server
