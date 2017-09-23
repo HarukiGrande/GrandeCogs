@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Mr Boo Grande",
+    "INSTALL_MSG" : "You have successfully installed Dio. Visit https://discord.io/",
+    "NAME" : "Dio",
+    "SHORT" : "[p]dio",
+    "DESCRIPTION" : "Discord invite link shortener",
+    "TAGS" : ["dio","discordio","link","shortener","url","invite"],
+    "HIDDEN" : false
+}
