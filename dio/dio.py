@@ -69,5 +69,7 @@ def check_file():
         dataIO.save_json(f, system)
 
 def setup(bot):
+    check_folder()
+    check_file()
     n = Dio(bot)
     bot.add_cog(n)
