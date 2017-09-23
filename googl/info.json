@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Mr Boo Grande",
+    "INSTALL_MSG" : "You have successfully installed Googl. Visit https://console.developers.google.com to get an API key.",
+    "NAME" : "Googl",
+    "SHORT" : "[p]googl",
+    "DESCRIPTION" : "Googl Url Shortener, expander and analyzer",
+    "TAGS" : ["googl","google","url","shortener","analytics"],
+    "HIDDEN" : false
+}
