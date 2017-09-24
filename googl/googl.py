@@ -33,6 +33,7 @@ class GoogleUrlShortener:
             await send_cmd_help(ctx)
         
     @googl.command(pass_context=True)
+    @checks.is_owner()
     async def setkey(self, ctx, key):
         """Set api key
         
