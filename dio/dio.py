@@ -33,6 +33,7 @@ class Dio:
             await send_cmd_help(ctx)
     
     @dio.command(pass_context=True)
+    @checks.is_owner()
     async def setkey(self, ctx, key):
         """Set api key
         
