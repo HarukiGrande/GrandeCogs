@@ -2,13 +2,6 @@
 
 Ayeee!
 
-Cogs:
-- Hug: Hug your senpai/waifu!
-- Kiss: Kiss your senpai/waifu!
-- Pat: Pat your senpai/waifu!
-- Neko: Request a random image from https://nekos.life/
-- RadioHaru: Radio Haru 24/7 Online Radio
-
 # Contact
 Find me on the official Red Discord guild - https://discord.gg/red
 
