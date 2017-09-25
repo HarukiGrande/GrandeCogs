@@ -41,6 +41,7 @@ class GoogleUrlShortener:
         if not await self.checkPM(ctx.message):
             return
         self.loadapi["ApiKey"] =  key
+        dataIO.save_json("data/googl/api.json", self.loadapi)
         await self.bot.say("Key updated!")
 
     @googl.command(pass_context=True, no_pm=True)
