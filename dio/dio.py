@@ -41,6 +41,7 @@ class Dio:
         if not await self.checkPM(ctx.message):
             return
         self.loadapi["ApiKey"] =  key
+        dataIO.save_json("data/dio/api.json", self.loadapi)
         await self.bot.say("Key updated!")
 
     @dio.command(pass_context=True, no_pm=True)
