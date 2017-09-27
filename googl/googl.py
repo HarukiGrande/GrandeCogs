@@ -85,7 +85,7 @@ class GoogleUrlShortener:
 
 def check_folder():
     if not os.path.exists("data/googl"):
-        print("Creating data/account folder...")
+        print("Creating data/googl folder...")
         os.makedirs("data/googl")
         
 def check_file():
