@@ -60,7 +60,7 @@ class Dio:
                     
 def check_folder():
     if not os.path.exists("data/dio"):
-        print("Creating data/account folder...")
+        print("Creating data/dio folder...")
         os.makedirs("data/dio")
         
 def check_file():
