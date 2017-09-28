@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Mr Boo Grande",
+    "INSTALL_MSG" : "You have successfully installed Global Notebook.",
+    "NAME" : "GNotebook",
+    "SHORT" : "[p]gnotebook",
+    "DESCRIPTION" : "Global Notebook",
+    "TAGS" : ["notebook","note","book","notes","memo","diary","global","gnotebook","gnote","gbook"],
+    "HIDDEN" : false
+}
