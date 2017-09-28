@@ -26,7 +26,7 @@ class chatter:
 
     @commands.command(pass_context=True, invoke_without_command=True)
     async def chat(self, ctx, *, message):
-        """chat with me, I learn!!"""
+        """Chat with me, I learn!!"""
         
         await self.bot.say(self.chatbot.get_response(message))
 
