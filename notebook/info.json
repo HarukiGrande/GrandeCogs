@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "Mr Boo Grande",
+    "INSTALL_MSG" : "You have successfully installed Notebook.",
+    "NAME" : "Notebook",
+    "SHORT" : "[p]notebook",
+    "DESCRIPTION" : "Notebook for guilds",
+    "TAGS" : ["notebook","note","book","notes","memo","diary"],
+    "HIDDEN" : false
+}
