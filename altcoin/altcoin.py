@@ -13,7 +13,7 @@ class AltCoin:
     async def altcoin(self, ctx, coin):
         """Altcoin stats"""
         async with aiohttp.ClientSession() as session:
-            async with session.get('https://api.coinmarketcap.com/v1/ticker/' + id) as resp:
+            async with session.get('https://api.coinmarketcap.com/v1/ticker/' + coin) as resp:
                 print(resp.status)
                 yes = await resp.json()
                 embed = discord.Embed(description=yes['name'], colour=discord.Colour.blue())
