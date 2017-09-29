@@ -4,7 +4,7 @@ import asyncio
 import aiohttp
 import json
 
-class Monero:
+class AltCoin:
 
     def __init__(self,bot):
         self.bot = bot
@@ -29,5 +29,5 @@ class Monero:
                 await self.bot.say(embed=embed)
 
 def setup(bot):
-    n = Monero(bot)
+    n = AltCoin(bot)
     bot.add_cog(n)
