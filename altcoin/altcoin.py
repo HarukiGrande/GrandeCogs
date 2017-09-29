@@ -10,10 +10,10 @@ class AltCoin:
         self.bot = bot
                 
     @commands.command(pass_context=True, no_pm=True)
-    async def altcoin(self, ctx, coin):
+    async def altcoin(self, ctx):
         """Altcoin stats"""
         async with aiohttp.ClientSession() as session:
-            async with session.get('https://api.coinmarketcap.com/v1/ticker/' + coin) as resp:
+            async with session.get('https://api.coinmarketcap.com/v1/ticker/monero') as resp:
                 print(resp.status)
                 yes = await resp.text()
                 embed = discord.Embed(description=yes['name'], colour=discord.Colour.blue())
