@@ -1,9 +1,0 @@
-{
-    "AUTHOR" : "Mr Boo Grande",
-    "INSTALL_MSG" : "You have successfully installed AltCoin.",
-    "NAME" : "AltCoin",
-    "SHORT" : "[p]altcoin",
-    "DESCRIPTION" : "AltCoin",
-    "TAGS" : ["altcoin","coin","bitcoin"],
-    "HIDDEN" : false
-}
