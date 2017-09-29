@@ -10,7 +10,7 @@ class AltCoin:
         self.bot = bot
                 
     @commands.command(pass_context=True, no_pm=True)
-    async def coin(self, ctx, coin):
+    async def altcoin(self, ctx, coin):
         """Altcoin stats"""
         async with aiohttp.ClientSession() as session:
             async with session.get('https://api.coinmarketcap.com/v1/ticker/' + id) as resp:
