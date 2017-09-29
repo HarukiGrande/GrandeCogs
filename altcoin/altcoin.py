@@ -15,7 +15,7 @@ class AltCoin:
         async with aiohttp.ClientSession() as session:
             async with session.get('https://api.coinmarketcap.com/v1/ticker/' + coin) as resp:
                 print(resp.status)
-                yes = json.loads(resp)
+                owo = json.loads(resp).decode('utf-8')
                 embed = discord.Embed(description=yes['name'], colour=discord.Colour.blue())
                 embed.add_field(name="**Symbol:**",value=yes['symbol'])
                 embed.add_field(name="**Rank:**",value=yes['rank'])
