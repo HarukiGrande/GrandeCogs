@@ -1,6 +1,6 @@
 {
     "AUTHOR" : "Mr Boo Grande",
-    "INSTALL_MSG" : "You have successfully installed Chat. Special thanks to Tom for helping me with this cog :heart:",
+    "INSTALL_MSG" : "You have successfully installed Chat. Special thanks to Tom for helping me with this cog :heart:\nMake sure to install MongoDB before using this cog - https://www.mongodb.com/download-center#community",
     "NAME" : "chat",
     "SHORT" : "[p]chat",
     "DESCRIPTION" : "Self-learning chatterbot without having to pay for API calls! \\o/",
