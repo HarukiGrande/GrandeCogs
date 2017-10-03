@@ -24,7 +24,7 @@ class ChatterBot:
         ],
         input_adapter="chatterbot.input.TerminalAdapter",
         output_adapter="chatterbot.output.TerminalAdapter",
-        database="/data/chatbot/database.db"
+        database="chatbot.db"
         )
         self.chatbot.set_trainer(ChatterBotCorpusTrainer) 
         self.chatbot.train("chatterbot.corpus.english.greetings", "chatterbot.corpus.english.conversations", "chatterbot.corpus.english.trivia", "chatterbot.corpus.english",)
