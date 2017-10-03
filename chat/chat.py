@@ -10,17 +10,21 @@ except ImportError:
     module_avail = False
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
-class ChatBot:
+class ChatterBot:
     """Chat"""
 
     def __init__(self, bot):
         self.bot = bot
-        self.chatbot = ChatBot('Chatterbot', storage_adapter='chatterbot.storage.SQLStorageAdapter', logic_adapters=[
-        "chatterbot.logic.BestMatch", 
+        self.chatbot = ChatBot("Chatterbot",
+        storage_adapter="chatterbot.storage.SQLStorageAdapter",
+        logic_adapters=[
         "chatterbot.logic.MathematicalEvaluation",
         "chatterbot.logic.TimeLogicAdapter",
+        "chatterbot.logic.BestMatch"
         ],
-        database='/data/chatbot/database.sqlite3'
+        input_adapter="chatterbot.input.TerminalAdapter",
+        output_adapter="chatterbot.output.TerminalAdapter",
+        database="/data/chatbot/database.db"
         )
         self.chatbot.set_trainer(ChatterBotCorpusTrainer) 
         self.chatbot.train("chatterbot.corpus.english.greetings", "chatterbot.corpus.english.conversations", "chatterbot.corpus.english.trivia", "chatterbot.corpus.english",)
@@ -39,6 +43,6 @@ def check_folders():
 def setup(bot):
     check_folders()
     if module_avail == True:
-        bot.add_cog(ChatBot(bot))
+        bot.add_cog(ChatterBot(bot))
     else:
         raise RuntimeError("You need to run `pip3 install chatterbot`")
