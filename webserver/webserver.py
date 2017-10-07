@@ -25,7 +25,7 @@ class WebServer:
         if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
             
-    @webserver.command(pass_context=True)
+    @webserver.group(pass_context=True)
     async def link(self, ctx):
         """Link to webpage, use the permissions cog if you don't want the IP to be public when not using a reverse proxy."""
         if not self.settings['url'].startswith(tuple(['http://'])):
@@ -33,7 +33,7 @@ class WebServer:
         else:
             await self.bot.say("{}".format(self.settings['url']))
 
-    @webserver.command(pass_context=True)
+    @webserver.group(pass_context=True)
     @checks.is_owner()
     async def content(self, ctx, *, content):
         """Set webpage content, use HTML and CSS in a codeblock."""
@@ -52,7 +52,7 @@ class WebServer:
             else:
                 await self.bot.say("Content updated!\n{}".format(self.settings['url']))
     
-    @webserver.command(pass_context=True)
+    @webserver.group(pass_context=True)
     @checks.is_owner()
     async def url(self, ctx, url):
         """Change webserver url if reverse proxied."""
@@ -63,7 +63,7 @@ class WebServer:
         else:
             await self.bot.say("URL updated!\n{}".format(self.settings['url']))
         
-    @webserver.command(pass_context=True)
+    @webserver.group(pass_context=True)
     @checks.is_owner()
     async def port(self, ctx, port):
         """Change webserver port, remember to change DNS settings if using reverse proxied domain."""
