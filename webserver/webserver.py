@@ -8,7 +8,7 @@ import discord
 from discord.ext import commands
 from __main__ import send_cmd_help
 
-class webserver:
+class WebServer:
     def __init__(self, bot):
         self.bot = bot
         bot.loop.create_task(self.make_webserver())
@@ -121,5 +121,5 @@ def check_file():
 def setup(bot):
     check_folder()
     check_file()
-    cog = webserver(bot)
+    cog = WebServer(bot)
     bot.add_cog(cog)
