@@ -1,6 +1,6 @@
 {
     "AUTHOR" : "Mr Boo Grande",
-    "INSTALL_MSG" : "You have successfully installed WebServer. Special thanks to Paddo for inspiring me with his StatisticsPlus cog :heart:",
+    "INSTALL_MSG" : "You have successfully installed WebServer. Special thanks to Paddo for inspiring me with his StatisticsPlus cog :heart:\n\nUse the Permissions cog by Will to limit access to `[p]webserver link` if you don't want your IP to be posted publically. Or create a reverse proxy and change the url with `[p]webserver url`",
     "NAME" : "webserver",
     "SHORT" : "[p]webserver",
     "DESCRIPTION" : "Host your own http server without any knowledge needed!",
