@@ -40,7 +40,7 @@ class RadioHaru:
                 player = voice.create_ffmpeg_player('https://stream.radioharu.pw/owo', use_avconv=self.use_avconv)
                 player.start()
                 await self.bot.say(":green_heart: **Playing Radio Haru!**")
-            except discord.ext.commands.errors.CommandInvokeError:
+            except InvalidArgument:
                 await self.bot.say("You either didn't enter a voice channel to connect to, or weren't in one!")
             
     @radioharu.command(pass_context=True, no_pm=True)
@@ -71,7 +71,7 @@ class RadioHaru:
                     player.start()
                     await asyncio.sleep(300)
                     await self._disconnect_voice_client(server)
-                except discord.ext.commands.errors.CommandInvokeError:
+                except InvalidArgument:
                     await self.bot.say("You either didn't enter a voice channel to connect to, or weren't in one!")
 
     @radioharu.command(pass_context=True, no_pm=True)
@@ -83,7 +83,7 @@ class RadioHaru:
         await self._disconnect_voice_client(server)
         voice_channel = author.voice_channel
         voice = await self.bot.join_voice_channel(voice_channel)
-        player = voice.create_ffmpeg_player('https://cdn.discordapp.com/attachments/336598653923753987/360425539309142037/radioharu_goodbye.mp3')
+        player = voice.create_ffmpeg_player('https://cdn.discordapp.com/attachments/336598653923753987/360425539309142037/radioharu_goodbye.mp3', use_avconv=self.use_avconv)
         player.start()
         await asyncio.sleep(1)
         await self._disconnect_voice_client(server)
