@@ -37,7 +37,7 @@ class RadioHaru:
                 player.start()
                 await asyncio.sleep(7)
                 player.stop()
-                player = voice.create_ffmpeg_player('https://stream.radioharu.pw/owo', use_avconv=self.use_avconv)
+                player = voice.create_ffmpeg_player('https://stream.radioharu.pw/radioharu', use_avconv=self.use_avconv)
                 player.start()
                 await self.bot.say(":green_heart: **Playing Radio Haru!**")
             except InvalidArgument:
@@ -67,7 +67,7 @@ class RadioHaru:
             while radio == True:
                 try:
                     voice = await self.bot.join_voice_channel(voice_channel)
-                    player = voice.create_ffmpeg_player('https://stream.radioharu.pw/owo', use_avconv=self.use_avconv)
+                    player = voice.create_ffmpeg_player('https://stream.radioharu.pw/radioharu', use_avconv=self.use_avconv)
                     player.start()
                     await asyncio.sleep(300)
                     await self._disconnect_voice_client(server)
